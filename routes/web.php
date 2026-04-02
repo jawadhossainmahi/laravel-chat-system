@@ -1,8 +1,12 @@
 <?php
 
 use App\Livewire\Chat;
+use Illuminate\Support\Facades\Broadcast;
 use Illuminate\Support\Facades\Route;
 use Livewire\Volt\Volt;
+
+
+Broadcast::routes(['middleware' => ['auth']]);
 
 Route::get('/', function () {
     return view('welcome');
