@@ -157,7 +157,3 @@ routes/
 ```
 
 ---
-
-## License
-
-MIT
